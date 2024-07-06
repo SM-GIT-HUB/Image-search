@@ -44,6 +44,10 @@ async function searchNow()
 
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    if (searchBox.value.toString().trim() == "") {
+        return;
+    }
+
     page = 1;
     searchResult.innerHTML = "";
     showMore.style.display = "none";
