@@ -6,8 +6,6 @@ const showMore = document.getElementById("showMore");
 
 const imageClass = ["w-[100%]", "h-[100px]", "object-cover", "rounded-[4px]", "md:h-[230px]"]
 
-const images = document.querySelectorAll("img");
-
 let keyword = "";
 let page = 1;
 const accessKey = "JHGWH5uO4VdDarWqP81TCLO6Y3HoSgLINQfUFGFygCc";
@@ -22,7 +20,7 @@ async function searchNow()
 
     const data = await response.json();
 
-    console.log(data);
+    // console.log(data);
 
     const results = data.results;
 
